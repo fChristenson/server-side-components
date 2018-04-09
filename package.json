@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "server-side-components",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.9",
+    "style-loader": "^0.20.2"
+  }
+}

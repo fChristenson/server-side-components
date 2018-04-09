@@ -1,0 +1,10 @@
+include ./components/todo/todo.pug
+mixin todoList(todos)
+  ul(data-js="todo-list", class="todo-list")
+    <!-- Thanks to the data-js attribute we now know that this is an element -->
+    <!-- with javascript that depends on it -->
+    each val in todos
+      +todo(val)
+    <!-- Our component depends on a child component -->
+  form(action="", data-js="todo-form")
+    input(type="text", placeholder="Todo", data-js="todo-field")

@@ -1,0 +1,9 @@
+include ../components/entry/todoList/todoList.pug
+html
+  include ./includes/header.pug
+  body
+    h1= "Todos: "
+      span(data-js="number-of-todos")= todos.length
+    +todoList(todos)
+    <!-- Thanks to mixins we can create serverside components without any framework -->
+    include ./includes/footer.pug
